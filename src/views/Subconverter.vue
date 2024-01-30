@@ -340,7 +340,7 @@ export default {
     }
   },
   mounted() {
-    this.form.clientType = "clash";
+    this.form.clientType = "Loon";
     this.notify();
     this.getBackendVersion();
   },
