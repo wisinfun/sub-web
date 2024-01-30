@@ -210,7 +210,7 @@ export default {
           ClashR: "clashr",
           Surge2: "surge&ver=2",
         },
-        backendOptions: [{ value: "http://127.0.0.1:25500/sub?" }],
+        backendOptions: [{ value: "https://subconverter-4oam.onrender.com/sub?" }],
         remoteConfig: [
           {
             label: "ACL规则",
@@ -230,8 +230,8 @@ export default {
       form: {
         sourceSubUrl: "",
         clientType: "",
-        customBackend: "",
-        remoteConfig: "",
+        customBackend: "https://subconverter-4oam.onrender.com/sub?",
+        remoteConfig: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full.ini",
         excludeRemarks: "",
         includeRemarks: "",
         filename: "",
@@ -283,7 +283,7 @@ export default {
     }
   },
   mounted() {
-    this.form.clientType = "Loon";
+    this.form.clientType = "Clash";
     this.notify();
     this.getBackendVersion();
   },
